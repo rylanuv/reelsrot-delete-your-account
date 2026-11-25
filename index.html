@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Delete Account – ReelsRot</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+            line-height: 1.7;
+            color: #e0e0e0;
+            background-color: #0a0a0a;
+            padding: 2rem 1rem;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background: #141414;
+            border-radius: 16px;
+            padding: 3rem 2.5rem;
+            border: 1px solid #1e1e1e;
+        }
+
+        h1 {
+            font-size: 2rem;
+            font-weight: 700;
+            color: #ffffff;
+            margin-bottom: 0.5rem;
+        }
+
+        .subtitle {
+            color: #00bcd4;
+            font-size: 0.95rem;
+            margin-bottom: 2rem;
+            font-weight: 500;
+        }
+
+        h2 {
+            font-size: 1.3rem;
+            font-weight: 600;
+            color: #ffffff;
+            margin-top: 2rem;
+            margin-bottom: 0.75rem;
+            padding-bottom: 0.4rem;
+            border-bottom: 1px solid #222;
+        }
+
+        p {
+            margin-bottom: 1rem;
+            color: #bbb;
+        }
+
+        ul,
+        ol {
+            margin-bottom: 1rem;
+            padding-left: 1.5rem;
+        }
+
+        li {
+            margin-bottom: 0.5rem;
+            color: #bbb;
+        }
+
+        strong {
+            color: #e0e0e0;
+        }
+
+        a {
+            color: #00bcd4;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        .highlight-box {
+            background: #1a2332;
+            border-left: 4px solid #00bcd4;
+            padding: 1rem 1.25rem;
+            border-radius: 0 8px 8px 0;
+            margin: 1.5rem 0;
+        }
+
+        .highlight-box p {
+            margin-bottom: 0;
+            color: #ccc;
+        }
+
+        .warning-box {
+            background: #2a1818;
+            border-left: 4px solid #ef5350;
+            padding: 1rem 1.25rem;
+            border-radius: 0 8px 8px 0;
+            margin: 1.5rem 0;
+        }
+
+        .warning-box p {
+            margin-bottom: 0;
+            color: #e6b8b8;
+        }
+
+        .card {
+            background: #1a1a1a;
+            border: 1px solid #262626;
+            border-radius: 12px;
+            padding: 1.5rem;
+            margin: 1.25rem 0;
+        }
+
+        label {
+            display: block;
+            font-size: 0.9rem;
+            font-weight: 600;
+            color: #e0e0e0;
+            margin-bottom: 0.4rem;
+        }
+
+        input[type="email"],
+        textarea {
+            width: 100%;
+            background: #0f0f0f;
+            border: 1px solid #2c2c2c;
+            border-radius: 8px;
+            padding: 0.75rem 0.9rem;
+            color: #ffffff;
+            font-family: inherit;
+            font-size: 0.95rem;
+            margin-bottom: 1rem;
+        }
+
+        input[type="email"]:focus,
+        textarea:focus {
+            outline: none;
+            border-color: #00bcd4;
+        }
+
+        .checkbox-row {
+            display: flex;
+            align-items: flex-start;
+            gap: 0.65rem;
+            margin-bottom: 1.25rem;
+        }
+
+        .checkbox-row input {
+            margin-top: 0.3rem;
+            accent-color: #ef5350;
+        }
+
+        .checkbox-row label {
+            margin-bottom: 0;
+            font-weight: 400;
+            color: #bbb;
+            font-size: 0.9rem;
+        }
+
+        .btn {
+            display: inline-block;
+            background: #ef5350;
+            color: #ffffff;
+            border: none;
+            border-radius: 8px;
+            padding: 0.8rem 1.4rem;
+            font-size: 0.95rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: opacity 0.15s ease;
+        }
+
+        .btn:hover {
+            opacity: 0.9;
+        }
+
+        .btn-secondary {
+            background: #242424;
+            color: #e0e0e0;
+            border: 1px solid #333;
+            margin-left: 0.5rem;
+        }
+
+        .status-msg {
+            margin-top: 1rem;
+            font-size: 0.9rem;
+            color: #80deea;
+            display: none;
+        }
+
+        .footer {
+            margin-top: 3rem;
+            padding-top: 1.5rem;
+            border-top: 1px solid #222;
+            font-size: 0.85rem;
+            color: #666;
+            text-align: center;
+        }
+
+        @media (max-width: 600px) {
+            .container {
+                padding: 2rem 1.25rem;
+            }
+
+            h1 {
+                font-size: 1.5rem;
+            }
+
+            .btn-secondary {
+                margin-left: 0;
+                margin-top: 0.6rem;
+                display: block;
+                width: 100%;
+                text-align: center;
+            }
+
+            .btn {
+                width: 100%;
+                text-align: center;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Account &amp; Data Deletion Request</h1>
+        <p class="subtitle">ReelsRot</p>
+
+        <div class="highlight-box">
+            <p><strong>App:</strong> ReelsRot (Android)<br>
+               <strong>Contact Email:</strong> <a href="mailto:rylpix.app@gmail.com">rylpix.app@gmail.com</a>
+            </p>
+        </div>
+
+        <p>
+            If you signed in to <strong>ReelsRot</strong> using Google Sign-In, you can permanently delete your
+            authentication account and associated profile data either directly inside the app or by submitting a request
+            on this page—no app reinstallation or sign-in required.
+        </p>
+
+        <h2>1. Request Account Deletion Online (No App Required)</h2>
+        <p>
+            Complete the form below or email us directly at
+            <a href="mailto:rylpix.app@gmail.com?subject=Account%20Deletion%20Request%20%E2%80%93%20ReelsRot">rylpix.app@gmail.com</a>
+            from (or specifying) the Google email address associated with your ReelsRot account.
+        </p>
+
+        <div class="card">
+            <form id="deletionForm">
+                <label for="accountEmail">Google Account Email Address</label>
+                <input type="email" id="accountEmail" name="accountEmail" required
+                    placeholder="you@example.com">
+
+                <label for="notes">Additional Details (Optional)</label>
+                <textarea id="notes" name="notes" rows="3"
+                    placeholder="Optional notes or reason for deletion"></textarea>
+
+                <div class="checkbox-row">
+                    <input type="checkbox" id="confirmPermanent" required>
+                    <label for="confirmPermanent">
+                        I understand that deleting my ReelsRot account is permanent and cannot be undone.
+                    </label>
+                </div>
+
+                <button type="submit" class="btn">Send Deletion Request via Email</button>
+                <button type="button" id="copyTemplateBtn" class="btn btn-secondary">Copy Request Text</button>
+
+                <p id="statusMsg" class="status-msg"></p>
+            </form>
+        </div>
+
+        <p>
+            <strong>Processing Time:</strong> Verified deletion requests submitted by email are processed within
+            <strong>7 business days</strong> (and no later than 30 days). You will receive a confirmation reply once
+            your account has been permanently deleted.
+        </p>
+
+        <h2>2. Delete Your Account Directly in the App (Immediate)</h2>
+        <p>If you still have ReelsRot installed and are signed in, you can delete your account immediately:</p>
+        <ol>
+            <li>Open the <strong>ReelsRot</strong> app on your Android device.</li>
+            <li>Open <strong>Settings</strong> and tap your profile card under the <strong>Account</strong> section.</li>
+            <li>Tap <strong>Delete Account</strong>.</li>
+            <li>Confirm by tapping <strong>Delete Permanently</strong>.</li>
+        </ol>
+        <p>
+            <em>Note:</em> For security, if it has been a long time since your last sign-in, Firebase Authentication may
+            ask you to sign out and sign back in once before confirming permanent deletion.
+        </p>
+
+        <h2>3. What Data Is Deleted vs. Retained</h2>
+        <ul>
+            <li>
+                <strong>Permanently Deleted (Account Data):</strong> Your Firebase Authentication user record—including
+                your unique user ID (<code>uid</code>), email address, display name, and Google sign-in association—is
+                permanently deleted.
+            </li>
+            <li>
+                <strong>Local Device Data:</strong> Your app usage history, reel counts, blocked app lists, workout
+                challenge logs, XP/streaks, and settings are stored <strong>locally on your device only</strong>. To
+                remove local data, either clear app storage (<strong>Device Settings → Apps → ReelsRot → Storage → Clear
+                Data</strong>) or uninstall the app.
+            </li>
+            <li>
+                <strong>Google Play Purchases &amp; Subscriptions:</strong> Transaction history and billing records are
+                managed directly by Google Play. Deleting your ReelsRot account does <strong>not</strong> automatically
+                cancel an active Google Play subscription. To cancel a subscription, open the <strong>Google Play
+                Store → Profile icon → Payments &amp; subscriptions → Subscriptions</strong>.
+            </li>
+            <li>
+                <strong>Retained Records (Legal / Security / Aggregated Data):</strong> Non-identifiable, aggregated
+                Firebase Analytics metrics cannot be linked back to a deleted account. Email correspondence requesting
+                deletion may be retained temporarily solely to document request fulfillment and prevent fraud.
+            </li>
+        </ul>
+
+        <div class="warning-box">
+            <p><strong>Important:</strong> Account deletion is permanent. Once deleted, your authentication account cannot
+                be recovered.</p>
+        </div>
+
+        <h2>4. Contact</h2>
+        <p>
+            For questions about account or data deletion, contact us at
+            <a href="mailto:rylpix.app@gmail.com">rylpix.app@gmail.com</a>.
+        </p>
+
+        <div class="footer">
+            <p>&copy; 2026 ReelsRot. All rights reserved.</p>
+        </div>
+    </div>
+
+    <script>
+        (function () {
+            const form = document.getElementById('deletionForm');
+            const emailInput = document.getElementById('accountEmail');
+            const notesInput = document.getElementById('notes');
+            const confirmBox = document.getElementById('confirmPermanent');
+            const copyBtn = document.getElementById('copyTemplateBtn');
+            const statusMsg = document.getElementById('statusMsg');
+
+            function buildBody() {
+                const email = emailInput.value.trim() || '[Your Google Account Email]';
+                const notes = notesInput.value.trim();
+                let body =
+                    'Hello ReelsRot Support,\n\n' +
+                    'I would like to request the permanent deletion of my ReelsRot account and associated authentication data.\n\n' +
+                    'Account Email: ' + email + '\n';
+                if (notes) {
+                    body += 'Additional Details: ' + notes + '\n';
+                }
+                body += '\nI understand this action is permanent and cannot be undone.';
+                return body;
+            }
+
+            form.addEventListener('submit', function (e) {
+                e.preventDefault();
+                if (!emailInput.value.trim() || !confirmBox.checked) return;
+
+                const subject = encodeURIComponent('Account Deletion Request – ReelsRot');
+                const body = encodeURIComponent(buildBody());
+                window.location.href = 'mailto:rylpix.app@gmail.com?subject=' + subject + '&body=' + body;
+
+                statusMsg.textContent = 'Your email client should open with a pre-filled deletion request to rylpix.app@gmail.com. If it does not open, click "Copy Request Text" and email us manually.';
+                statusMsg.style.display = 'block';
+            });
+
+            copyBtn.addEventListener('click', function () {
+                const text = 'To: rylpix.app@gmail.com\nSubject: Account Deletion Request – ReelsRot\n\n' + buildBody();
+                if (navigator.clipboard && navigator.clipboard.writeText) {
+                    navigator.clipboard.writeText(text).then(function () {
+                        statusMsg.textContent = 'Request text copied to clipboard. Send it to rylpix.app@gmail.com.';
+                        statusMsg.style.display = 'block';
+                    });
+                } else {
+                    statusMsg.textContent = 'Please email rylpix.app@gmail.com with subject "Account Deletion Request – ReelsRot" and your account email.';
+                    statusMsg.style.display = 'block';
+                }
+            });
+        })();
+    </script>
+</body>
+
+</html>
